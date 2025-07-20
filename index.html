@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hadi Trumboo – Creative Developer & Designer</title>
+
+  <!-- Google Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">Hadi Trumboo</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO / BACKGROUND -->
+  <header class="hero">
+    <h1>Hadi Trumboo</h1>
+    <p>Creative Developer & Designer</p>
+    <a href="#work" class="btn">View Work</a>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+      <img src="hadi.png" alt="Your portrait" />
+      <div>
+        <p>
+          I’m a multidisciplinary creative who loves crafting beautiful, functional web experiences.
+          With a background in both design and development, I bridge the gap between aesthetics and code.
+        </p>
+        <p>
+          When I’m not pushing pixels or writing JavaScript, you’ll find me exploring new coffee shops
+          or contributing to open-source projects.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <h2>Selected Work</h2>
+    <div class="work-grid">
+      <!-- Project 1 -->
+      <div class="card">
+        <img src="https://source.unsplash.com/random/600x400?sig=1" alt="Project 1" />
+        <div class="card-content">
+          <h3>Project Alpha</h3>
+          <p>React, Three.js, GSAP</p>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="card">
+        <img src="https://source.unsplash.com/random/600x400?sig=2" alt="Project 2" />
+        <div class="card-content">
+          <h3>Project Beta</h3>
+          <p>Next.js, Prismic, Tailwind</p>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="card">
+        <img src="https://source.unsplash.com/random/600x400?sig=3" alt="Project 3" />
+        <div class="card-content">
+          <h3>Project Gamma</h3>
+          <p>Vue, Firebase, Nuxt</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <button id="reveal-btn" class="btn">Let’s Take</button>
+
+    <div id="contact-form" style="display: none;">
+      <p class="lead">Have a project in mind? Let’s talk.</p>
+      <form action="https://formspree.io/f/YOUR-ID" method="POST">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="_replyto" placeholder="Email" required />
+        <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="socials">
+      <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="mailto:hello@yourname.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>&copy; 2025 Hadi Trumboo. All rights reserved.</p>
+  </footer>
+
+  <!-- Reveal form on click -->
+  <script>
+    document.getElementById('reveal-btn').addEventListener('click', () => {
+      document.getElementById('reveal-btn').style.display = 'none';
+      document.getElementById('contact-form').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
